@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import com.example.rolf.dronedeliveryaes.R;
+import com.example.rolf.dronedeliveryaes.fruitvegitems.BroccoliItem;
 
 
 public class FruitAndVeg extends AppCompatActivity {
@@ -84,15 +85,15 @@ public class FruitAndVeg extends AppCompatActivity {
         //        startActivity(goToBanana);
         //    }
         //});
-        //Broccoli.setOnClickListener(new View.OnClickListener() {
-        //    @Override
-        //    public void onClick(View v) {
-//
-        //        Intent goToBroccoli = new Intent(FruitAndVeg.this, BroccoliItem.class);
-        //        startActivity(goToBroccoli);
-//
-        //    }
-        //});
+        Broccoli.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent goToBroccoli = new Intent(FruitAndVeg.this, BroccoliItem.class);
+                startActivity(goToBroccoli);
+
+            }
+        });
         //Carrot.setOnClickListener(new View.OnClickListener() {
         //    @Override
         //    public void onClick(View v) {
