@@ -1,9 +1,179 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.Beverages">
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="51dp"
+        android:background="?android:attr/colorActivatedHighlight"
+        android:text="Home" />
+
+    <Button
+        android:id="@+id/account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/home"
+        android:layout_toEndOf="@+id/category"
+        android:layout_toRightOf="@+id/category"
+        android:background="?android:attr/colorActivatedHighlight"
+        android:text="Account" />
+
+    <Button
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/home"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_toEndOf="@+id/home"
+        android:layout_toRightOf="@+id/home"
+        android:background="?android:attr/colorActivatedHighlight"
+        android:text="Category" />
+
+    <Button
+        android:id="@+id/track"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/home"
+        android:layout_toEndOf="@+id/account"
+        android:background="?android:attr/colorActivatedHighlight"
+        android:text="Track" />
+
+    <Button
+        android:id="@+id/cart"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/home"
+        android:background="?android:attr/colorActivatedHighlight"
+        android:text="Cart" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/sprite"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="14dp"
+        android:text="Chocolate drink"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_alignTop="@+id/textView3"
+        android:text="Water"
+        android:textColor="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/lipton"
+        android:layout_width="104dp"
+        android:layout_height="108dp"
+
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_alignTop="@+id/fanta"
+        app:srcCompat="@drawable/lipton" />
+
+    <ImageView
+        android:id="@+id/water"
+        android:layout_width="94dp"
+        android:layout_height="121dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/fanta"
+        android:layout_marginBottom="51dp"
+        app:srcCompat="@drawable/water" />
+
+
+
+    <ImageView
+        android:id="@+id/coke"
+        android:layout_width="130dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="162dp"
+        android:layout_toStartOf="@+id/account"
+        app:srcCompat="@drawable/coke" />
+
+    <ImageView
+        android:id="@+id/sprite"
+        android:layout_width="108dp"
+        android:layout_height="146dp"
+        android:layout_above="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-292dp"
+        android:layout_marginEnd="61dp"
+        app:srcCompat="@drawable/sprite" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="300dp"
+        android:text="Coka-Cola"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textView_address1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView9"
+        android:layout_alignTop="@+id/textView"
+        android:text="Sprite"
+        android:textColor="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/fanta"
+        android:layout_width="100dp"
+        android:layout_height="111dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="23dp"
+        app:srcCompat="@drawable/fanta" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="199dp"
+        android:layout_toEndOf="@+id/home"
+        android:text="Fanta"
+        android:textColor="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/chocolate"
+        android:layout_width="108dp"
+        android:layout_height="119dp"
+
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_alignTop="@+id/water"
+        app:srcCompat="@drawable/chocolate" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView8"
+        android:layout_marginEnd="94dp"
+        android:text="Ice Tea"
+        android:textColor="@android:color/black" />
+
+
+</RelativeLayout>
