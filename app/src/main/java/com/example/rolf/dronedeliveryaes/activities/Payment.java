@@ -1,6 +1,7 @@
 package com.example.rolf.dronedeliveryaes.activities;
 
 import android.content.Intent;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,7 +14,7 @@ import android.widget.Toast;
 
 import com.example.rolf.dronedeliveryaes.R;
 
-public class DeliveryTime extends AppCompatActivity {
+public class Payment extends AppCompatActivity {
 
     private RadioGroup radioGroupPhoto;
     private ImageView imageViewPhoto;
@@ -29,8 +30,8 @@ public class DeliveryTime extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment);
 
-        radioGroup = (RadioGroup) findViewById(R.id.test);
-
+        radioGroup = (RadioGroup) findViewById(R.id.radioGroup_payment);
+        imageViewPhoto = (ImageView) findViewById(R.id.imageViewPhoto);
 
 
 
@@ -54,7 +55,8 @@ public class DeliveryTime extends AppCompatActivity {
 
         radioButton = (RadioButton) findViewById(radioId);
 
-
+        int index = radioGroup.indexOfChild(radioButton);
+        imageViewPhoto.setImageResource(Photos[index]);
 
         Toast.makeText(this, "Payment: "+radioButton.getText(), Toast.LENGTH_SHORT).show();
 

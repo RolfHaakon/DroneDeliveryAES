@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Payment">
+
+    <Button
+        android:id="@+id/payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="61dp"
+        android:background="?android:attr/colorActivatedHighlight"
+        android:text="Confirm Payment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="67dp"
+        android:text="@string/choose_delivery_time"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView13"
+        android:layout_marginTop="141dp"
+        android:focusable="true">
+
+
+        <RadioButton
+            android:id="@+id/radio_One"
+            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+            android:layout_width="138dp"
+            android:layout_height="60dp"
+            android:checked="true"
+            android:focusable="true"
+            android:onClick="checkButton"
+            android:text="Credit Card"
+            tools:text="Credit Card" />
+
+        <RadioButton
+            android:id="@+id/radio_Two"
+            android:layout_width="138dp"
+            android:layout_height="60dp"
+            android:focusable="true"
+            android:onClick="checkButton"
+            android:text="Pay Lah"
+            android:textColorHint="@android:color/holo_blue_dark"
+            android:textColorLink="@android:color/holo_green_light"
+            tools:text="Pay Lah" />
+
+        <RadioButton
+            android:id="@+id/radio_Three"
+            android:layout_width="138dp"
+            android:layout_height="60dp"
+            android:focusable="true"
+            android:onClick="checkButton"
+            android:text="PayPal"
+            tools:text="PayPal" />
+
+        <RadioButton
+            android:id="@+id/radio_Four"
+            android:layout_width="138dp"
+            android:layout_height="60dp"
+            android:focusable="true"
+            android:onClick="checkButton"
+            android:text="My saved card(s)"
+            tools:text="My saved card(s)" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageViewPhoto"
+        android:layout_width="348dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="181dp"
+        android:layout_marginEnd="25dp"
+        app:srcCompat="@drawable/card" />
+</RelativeLayout>

@@ -60,7 +60,8 @@
         <activity android:name=".AlcoholItems.ChampagneItem" />
         <activity android:name=".AlcoholItems.VodkaItem" />
         <activity android:name=".activities.Alcohol" />
-        <activity android:name=".activities.DeliveryTime"></activity>
+        <activity android:name=".activities.DeliveryTime" />
+        <activity android:name=".activities.Payment"></activity>
     </application>
 
 </manifest>
