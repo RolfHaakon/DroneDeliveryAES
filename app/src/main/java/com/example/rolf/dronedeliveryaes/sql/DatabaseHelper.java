@@ -134,7 +134,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     /**
      * This method to update user record
      *
-     * @param user
      */
     public void updateUser(User user) {
         SQLiteDatabase db = this.getWritableDatabase();
@@ -153,7 +152,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     /**
      * This method is to delete user record
      *
-     * @param user
      */
     public void deleteUser(User user) {
         SQLiteDatabase db = this.getWritableDatabase();
@@ -166,7 +164,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     /**
      * This method to check user exist or not
      *
-     * @param email
+     *
      * @return true/false
      */
     public boolean checkUser(String email) {
@@ -210,8 +208,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     /**
      * This method to check user exist or not
      *
-     * @param email
-     * @param password
+     *  email
+     *  password
      * @return true/false
      */
     public boolean checkUser(String email, String password) {

@@ -90,12 +90,14 @@
         android:background="?android:attr/colorActivatedHighlight"
         android:text="Order History" />
 
-    <TextView
-        android:id="@+id/textView12"
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/nameProfile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="Robert Cook" />
+        android:textColor="@android:color/darker_gray" />
+
+
 
     <ScrollView
         android:layout_width="390dp"
@@ -175,6 +177,13 @@
         </LinearLayout>
     </ScrollView>
 
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:text="TextView" />
 
 
 </RelativeLayout>
