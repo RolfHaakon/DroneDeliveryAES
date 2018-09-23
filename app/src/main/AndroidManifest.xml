@@ -41,11 +41,13 @@
         <activity android:name=".fruitvegitems.WatermelonItem" />
         <activity android:name=".activities.MeatAndFish" />
         <activity android:name=".meatsandfishitems.ChickenItem" />
+        <activity android:name=".activities.OrderHistory"/>
         <activity android:name=".meatsandfishitems.FishItem" />
         <activity android:name=".meatsandfishitems.ShrimpItem" />
         <activity android:name=".meatsandfishitems.BurgerItem" />
         <activity android:name=".meatsandfishitems.BeefItem" />
         <activity android:name=".meatsandfishitems.BaconItem"></activity>
+        <activity android:name=".activities.Payment" />
     </application>
 
 </manifest>
