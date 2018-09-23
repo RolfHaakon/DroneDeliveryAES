@@ -7,7 +7,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import com.example.rolf.dronedeliveryaes.R;
+import com.example.rolf.dronedeliveryaes.fruitvegitems.AppleItem;
+import com.example.rolf.dronedeliveryaes.fruitvegitems.BananaItem;
 import com.example.rolf.dronedeliveryaes.fruitvegitems.BroccoliItem;
+import com.example.rolf.dronedeliveryaes.fruitvegitems.CarrotItem;
+import com.example.rolf.dronedeliveryaes.fruitvegitems.OrangeItem;
+import com.example.rolf.dronedeliveryaes.fruitvegitems.WatermelonItem;
 
 
 public class FruitAndVeg extends AppCompatActivity {
@@ -16,6 +21,7 @@ public class FruitAndVeg extends AppCompatActivity {
     private Button Account;
     private Button Track;
     private Button Category;
+    private Button Cart;
     private ImageView Apple;
     private ImageView Banana;
     private ImageView Broccoli;
@@ -34,12 +40,13 @@ public class FruitAndVeg extends AppCompatActivity {
         Account = (Button) findViewById(R.id.account);
         Category = (Button) findViewById(R.id.category);
         Track = (Button) findViewById(R.id.track);
-        Apple = (ImageView) findViewById(R.id.chicken);
-        Banana = (ImageView) findViewById(R.id.fish);
-        Broccoli = (ImageView) findViewById(R.id.shrimp);
-        Carrot = (ImageView) findViewById(R.id.burger);
-        Orange = (ImageView) findViewById(R.id.beef);
-        Watermelon = (ImageView) findViewById(R.id.bacon);
+        Cart = (Button) findViewById(R.id.cart);
+        Apple = (ImageView) findViewById(R.id.apple_item);
+        Banana = (ImageView) findViewById(R.id.banana);
+        Broccoli = (ImageView) findViewById(R.id.broccoli);
+        Carrot = (ImageView) findViewById(R.id.carrot_item);
+        Orange = (ImageView) findViewById(R.id.orange);
+        Watermelon = (ImageView) findViewById(R.id.watermelon);
 
         Home.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,8 +65,15 @@ public class FruitAndVeg extends AppCompatActivity {
         Track.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goToHomePage = new Intent(FruitAndVeg.this, Track.class);
-                startActivity(goToHomePage);
+                Intent goToTrack = new Intent(FruitAndVeg.this, Track.class);
+                startActivity(goToTrack);
+            }
+        });
+        Cart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goToShoppingCart = new Intent(FruitAndVeg.this, ShoppingCart.class);
+                startActivity(goToShoppingCart);
             }
         });
         Account.setOnClickListener(new View.OnClickListener() {
@@ -71,20 +85,20 @@ public class FruitAndVeg extends AppCompatActivity {
 
             }
         });
-        //Apple.setOnClickListener(new View.OnClickListener() {
-        //    @Override
-        //    public void onClick(View v) {
-        //        Intent goToApple = new Intent(FruitAndVeg.this, AppleItem.class);
-        //        startActivity(goToApple);
-        //    }
-        //});
-        //Banana.setOnClickListener(new View.OnClickListener() {
-        //    @Override
-        //    public void onClick(View v) {
-        //        Intent goToBanana = new Intent(FruitAndVeg.this, BananaItem.class);
-        //        startActivity(goToBanana);
-        //    }
-        //});
+        Apple.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goToApple = new Intent(FruitAndVeg.this, AppleItem.class);
+                startActivity(goToApple);
+            }
+        });
+        Banana.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goToBanana = new Intent(FruitAndVeg.this, BananaItem.class);
+                startActivity(goToBanana);
+            }
+        });
         Broccoli.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -94,32 +108,32 @@ public class FruitAndVeg extends AppCompatActivity {
 
             }
         });
-        //Carrot.setOnClickListener(new View.OnClickListener() {
-        //    @Override
-        //    public void onClick(View v) {
-//
-        //        Intent goToCarrot = new Intent(FruitAndVeg.this, CarrotItem.class);
-        //        startActivity(goToCarrot);
-//
-        //    }
-        //});
-        //Orange.setOnClickListener(new View.OnClickListener() {
-        //    @Override
-        //    public void onClick(View v) {
-//
-        //        Intent goToOrange = new Intent(FruitAndVeg.this, OrangeItem.class);
-        //        startActivity(goToOrange);
-//
-        //    }
-        //});
-        //Watermelon.setOnClickListener(new View.OnClickListener() {
-        //    @Override
-        //    public void onClick(View v) {
-//
-        //        Intent goToWatermelon = new Intent(FruitAndVeg.this, WatermelonItem.class);
-        //        startActivity(goToWatermelon);
-//
-        //    }
-        //});
+        Carrot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent goToCarrot = new Intent(FruitAndVeg.this, CarrotItem.class);
+                startActivity(goToCarrot);
+
+            }
+        });
+        Orange.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent goToOrange = new Intent(FruitAndVeg.this, OrangeItem.class);
+                startActivity(goToOrange);
+
+            }
+        });
+        Watermelon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+               Intent goToWatermelon = new Intent(FruitAndVeg.this, WatermelonItem.class);
+                startActivity(goToWatermelon);
+
+            }
+        });
     }
 }

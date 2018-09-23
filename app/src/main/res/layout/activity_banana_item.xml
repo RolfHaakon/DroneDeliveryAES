@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff"
-    tools:context=".fruitvegitems.BroccoliItem">
-
+    tools:context=".fruitvegitems.BananaItem">
 
     <Button
         android:id="@+id/cart"
@@ -131,8 +129,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.269"
-        app:srcCompat="@drawable/broccoli" />
+        app:layout_constraintVertical_bias="0.289"
+        app:srcCompat="@drawable/banana" />
 
     <TextView
         android:id="@+id/textView10"
@@ -144,7 +142,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Broccoli"
+        android:text="Banana"
         android:textColor="@android:color/black"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -171,7 +169,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10"
         app:layout_constraintVertical_bias="0.0" />
-
-
 
 </android.support.constraint.ConstraintLayout>

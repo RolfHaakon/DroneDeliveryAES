@@ -14,6 +14,8 @@ public class HomePage extends AppCompatActivity {
     private Button Category;
     private Button Account;
     private Button Track;
+    private Button Cart;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +26,7 @@ public class HomePage extends AppCompatActivity {
         Category = (Button) findViewById(R.id.category);
         Account = (Button) findViewById(R.id.account);
         Track = (Button) findViewById(R.id.track);
+        Cart = (Button) findViewById(R.id.cart);
 
         Category.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,6 +53,16 @@ public class HomePage extends AppCompatActivity {
 
                 Intent goToTrack = new Intent(HomePage.this, Track.class);
                 startActivity(goToTrack);
+
+            }
+        });
+
+        Cart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent goToShoppingCart = new Intent(HomePage.this, ShoppingCart.class);
+                startActivity(goToShoppingCart);
 
             }
         });

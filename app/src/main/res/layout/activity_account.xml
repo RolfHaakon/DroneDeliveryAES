@@ -9,16 +9,6 @@
     tools:context=".activities.Account">
 
     <Button
-        android:id="@+id/track"
-        android:layout_width="147dp"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/home"
-        android:layout_toEndOf="@+id/account"
-        android:background="?android:attr/colorActivatedHighlight"
-        android:text="Track Order" />
-
-
-    <Button
         android:id="@+id/home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -44,12 +34,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/home"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="0dp"
         android:layout_toEndOf="@+id/home"
         android:layout_toRightOf="@+id/home"
         android:background="?android:attr/colorActivatedHighlight"
-
-
         android:text="Category" />
+
+    <Button
+        android:id="@+id/track"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/home"
+        android:layout_toEndOf="@+id/account"
+        android:background="?android:attr/colorActivatedHighlight"
+        android:text="Track" />
+
+    <Button
+        android:id="@+id/cart"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/home"
+        android:background="?android:attr/colorActivatedHighlight"
+        android:text="Cart" />
 
     <ImageView
         android:id="@+id/imageView18"

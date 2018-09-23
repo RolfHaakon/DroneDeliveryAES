@@ -13,6 +13,7 @@ public class Category extends AppCompatActivity {
     private Button Home;
     private Button Account;
     private Button Track;
+    private Button Cart;
     private ImageView Fruit;
     private ImageView Meat;
     private ImageView Beverages;
@@ -30,6 +31,7 @@ public class Category extends AppCompatActivity {
         Fruit = (ImageView) findViewById(R.id.fruitveg);
         Meat = (ImageView) findViewById(R.id.meat);
         Beverages = (ImageView) findViewById(R.id.beverages);
+        Cart = (Button) findViewById(R.id.cart);
 
         Home.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,13 +63,23 @@ public class Category extends AppCompatActivity {
                 startActivity(goToFruitAndVeg);
             }
         });
-       //Meat.setOnClickListener(new View.OnClickListener() {
-       //    @Override
-       //    public void onClick(View v) {
-       //        Intent goToMeats = new Intent(Category.this, Meats.class);
-       //        startActivity(goToMeats);
-       //    }
-       //});
+
+        Cart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent goToShoppingCart = new Intent(Category.this, ShoppingCart.class);
+                startActivity(goToShoppingCart);
+
+            }
+        });
+       Meat.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               Intent goToMeats = new Intent(Category.this, MeatAndFish.class);
+               startActivity(goToMeats);
+           }
+       });
         //Beverages.setOnClickListener(new View.OnClickListener() {
         //    @Override
         //    public void onClick(View v) {

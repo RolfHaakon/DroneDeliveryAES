@@ -3,32 +3,28 @@ package com.example.rolf.dronedeliveryaes.activities;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.AppCompatTextView;
 import android.view.View;
 import android.widget.Button;
-
 import com.example.rolf.dronedeliveryaes.R;
-import com.example.rolf.dronedeliveryaes.sql.DatabaseHelper;
 
 public class Account extends AppCompatActivity {
 
     private Button Category;
     private Button Track;
     private Button Home;
-    private AppCompatTextView nameProfile;
-    private DatabaseHelper databaseHelper;
+    private Button Cart;
+    private Button DB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account);
-        initViews();
-        initObjects();
-
 
         Category = (Button) findViewById(R.id.category);
         Track = (Button) findViewById(R.id.track);
         Home = (Button)  findViewById(R.id.home);
+        Cart = (Button) findViewById(R.id.cart);
+
 
 
         Category.setOnClickListener(new View.OnClickListener() {
@@ -52,15 +48,14 @@ public class Account extends AppCompatActivity {
                 startActivity(goToHomePage);
             }
         });
-    }
-    protected void initViews() {
-        nameProfile = (AppCompatTextView) findViewById(R.id.nameProfile);
-    }
+        Cart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-    private void initObjects() {
+                Intent goToShoppingCart = new Intent(Account.this, ShoppingCart.class);
+                startActivity(goToShoppingCart);
 
-        String emailFromIntent = getIntent().getStringExtra("EMAIL");
-        nameProfile.setText(emailFromIntent);
-
+            }
+        });
     }
 }
