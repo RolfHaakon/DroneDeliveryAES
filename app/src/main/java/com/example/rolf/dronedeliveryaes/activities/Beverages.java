@@ -46,8 +46,8 @@ public class Beverages extends AppCompatActivity {
         Track = (Button) findViewById(R.id.track);
         Cart = (Button) findViewById(R.id.cart);
         Coke = (ImageView) findViewById(R.id.coke);
-        Sprite = (ImageView) findViewById(R.id.fanta);
-        Fanta = (ImageView) findViewById(R.id.sprite);
+        Sprite = (ImageView) findViewById(R.id.sprite);
+        Fanta = (ImageView) findViewById(R.id.fanta);
         Lipton = (ImageView) findViewById(R.id.lipton);
         Water = (ImageView) findViewById(R.id.water);
         ChocoDrink = (ImageView) findViewById(R.id.chocolate);
