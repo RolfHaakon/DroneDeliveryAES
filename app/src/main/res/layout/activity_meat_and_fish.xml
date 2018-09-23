@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MeatAndFish">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView_address1"
+        android:layout_below="@+id/beef"
+        android:layout_marginTop="-51dp"
+        android:text="Bacon"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_alignTop="@+id/textView3"
+        android:text="Beef mince"
+        android:textColor="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/burger"
+        android:layout_width="135dp"
+        android:layout_height="152dp"
+        android:layout_alignParentBottom="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="212dp"
+        android:layout_marginEnd="46dp"
+        app:srcCompat="@drawable/burger" />
+
+    <ImageView
+        android:id="@+id/beef"
+        android:layout_width="99dp"
+        android:layout_height="136dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/shrimp"
+        android:layout_marginBottom="51dp"
+        app:srcCompat="@drawable/beef" />
+    <Button
+        android:id="@+id/cart"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/track"
+        android:background="?android:attr/colorActivatedHighlight"
+        android:text="Cart" />
+
+    <Button
+        android:id="@+id/track"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/home"
+        android:layout_toEndOf="@+id/account"
+        android:background="?android:attr/colorActivatedHighlight"
+        android:text="Track" />
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="51dp"
+        android:background="?android:attr/colorActivatedHighlight"
+        android:text="Home" />
+
+    <Button
+        android:id="@+id/account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/home"
+        android:layout_toEndOf="@+id/category"
+        android:layout_toRightOf="@+id/category"
+        android:background="?android:attr/colorActivatedHighlight"
+        android:text="Account" />
+
+    <Button
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/home"
+        android:layout_toEndOf="@+id/home"
+        android:layout_toRightOf="@+id/home"
+        android:background="#aa5506"
+
+        android:text="Category" />
+
+    <ImageView
+        android:id="@+id/chicken"
+        android:layout_width="124dp"
+        android:layout_height="103dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="166dp"
+        android:layout_toStartOf="@+id/account"
+        app:srcCompat="@drawable/chicken" />
+
+    <ImageView
+        android:id="@+id/fish"
+        android:layout_width="106dp"
+        android:layout_height="134dp"
+        android:layout_above="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-292dp"
+        android:layout_marginEnd="63dp"
+        app:srcCompat="@drawable/salmon" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="292dp"
+        android:layout_toEndOf="@+id/home"
+        android:text="Chicken"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textView_address1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_alignTop="@+id/textView"
+        android:text="Fish"
+        android:textColor="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/shrimp"
+        android:layout_width="92dp"
+        android:layout_height="93dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="41dp"
+        app:srcCompat="@drawable/shrimp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="204dp"
+        android:layout_marginStart="80dp"
+        android:text="Shrimp"
+        android:textColor="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/bacon"
+        android:layout_width="108dp"
+        android:layout_height="119dp"
+
+        android:layout_alignBottom="@+id/beef"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="53dp"
+        app:srcCompat="@drawable/bacon" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView8"
+        android:layout_marginEnd="94dp"
+        android:text="Burger"
+        android:textColor="@android:color/black" />
+
+
+
+
+</RelativeLayout>

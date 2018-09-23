@@ -65,8 +65,8 @@ public class FruitAndVeg extends AppCompatActivity {
         Track.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goToHomePage = new Intent(FruitAndVeg.this, Track.class);
-                startActivity(goToHomePage);
+                Intent goToTrack = new Intent(FruitAndVeg.this, Track.class);
+                startActivity(goToTrack);
             }
         });
         Cart.setOnClickListener(new View.OnClickListener() {

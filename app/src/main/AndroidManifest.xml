@@ -38,7 +38,10 @@
         <activity android:name=".fruitvegitems.BananaItem" />
         <activity android:name=".fruitvegitems.CarrotItem" />
         <activity android:name=".fruitvegitems.OrangeItem" />
-        <activity android:name=".fruitvegitems.WatermelonItem"></activity>
+        <activity android:name=".fruitvegitems.WatermelonItem" />
+        <activity android:name=".activities.MeatAndFish" />
+        <activity android:name=".meatsandfishitems.ChickenItem" />
+        <activity android:name=".meatsandfishitems.FishItem"></activity>
     </application>
 
 </manifest>

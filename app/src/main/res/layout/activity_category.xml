@@ -81,7 +81,7 @@
         android:layout_marginStart="0dp"
         android:layout_toEndOf="@+id/home"
         android:layout_toRightOf="@+id/home"
-        android:background="?android:attr/colorActivatedHighlight"
+        android:background="#aa5506"
         android:text="Category" />
 
     <Button
