@@ -73,13 +73,13 @@ public class Category extends AppCompatActivity {
 
             }
         });
-       //Meat.setOnClickListener(new View.OnClickListener() {
-       //    @Override
-       //    public void onClick(View v) {
-       //        Intent goToMeats = new Intent(Category.this, Meats.class);
-       //        startActivity(goToMeats);
-       //    }
-       //});
+       Meat.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               Intent goToMeats = new Intent(Category.this, MeatAndFish.class);
+               startActivity(goToMeats);
+           }
+       });
         //Beverages.setOnClickListener(new View.OnClickListener() {
         //    @Override
         //    public void onClick(View v) {

@@ -8,7 +8,12 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.example.rolf.dronedeliveryaes.R;
+import com.example.rolf.dronedeliveryaes.meatsandfishitems.BaconItem;
+import com.example.rolf.dronedeliveryaes.meatsandfishitems.BeefItem;
+import com.example.rolf.dronedeliveryaes.meatsandfishitems.BurgerItem;
 import com.example.rolf.dronedeliveryaes.meatsandfishitems.ChickenItem;
+import com.example.rolf.dronedeliveryaes.meatsandfishitems.FishItem;
+import com.example.rolf.dronedeliveryaes.meatsandfishitems.ShrimpItem;
 
 public class MeatAndFish extends AppCompatActivity {
 
@@ -91,7 +96,7 @@ public class MeatAndFish extends AppCompatActivity {
         Fish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goToFish = new Intent(MeatAndFish.this, Fish.class);
+                Intent goToFish = new Intent(MeatAndFish.this, FishItem.class);
                 startActivity(goToFish);
             }
         });
@@ -100,7 +105,7 @@ public class MeatAndFish extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent goToShrimp = new Intent(MeatAndFish.this, Shrimp.class);
+                Intent goToShrimp = new Intent(MeatAndFish.this, ShrimpItem.class);
                 startActivity(goToShrimp);
 
             }
@@ -109,7 +114,7 @@ public class MeatAndFish extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent goToBurger = new Intent(MeatAndFish.this, Burger.class);
+                Intent goToBurger = new Intent(MeatAndFish.this, BurgerItem.class);
                 startActivity(goToBurger);
 
             }
@@ -118,7 +123,7 @@ public class MeatAndFish extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent goToBeef = new Intent(MeatAndFish.this, Beef.class);
+                Intent goToBeef = new Intent(MeatAndFish.this, BeefItem.class);
                 startActivity(goToBeef);
 
             }
@@ -127,7 +132,7 @@ public class MeatAndFish extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent goToBacon = new Intent(MeatAndFish.this, Bacon.class);
+                Intent goToBacon = new Intent(MeatAndFish.this, BaconItem.class);
                 startActivity(goToBacon);
 
             }

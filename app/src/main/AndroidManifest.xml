@@ -41,7 +41,11 @@
         <activity android:name=".fruitvegitems.WatermelonItem" />
         <activity android:name=".activities.MeatAndFish" />
         <activity android:name=".meatsandfishitems.ChickenItem" />
-        <activity android:name=".meatsandfishitems.FishItem"></activity>
+        <activity android:name=".meatsandfishitems.FishItem" />
+        <activity android:name=".meatsandfishitems.ShrimpItem" />
+        <activity android:name=".meatsandfishitems.BurgerItem" />
+        <activity android:name=".meatsandfishitems.BeefItem" />
+        <activity android:name=".meatsandfishitems.BaconItem"></activity>
     </application>
 
 </manifest>
