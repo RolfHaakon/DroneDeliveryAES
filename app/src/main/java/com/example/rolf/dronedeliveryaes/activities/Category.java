@@ -32,6 +32,7 @@ public class Category extends AppCompatActivity {
         Meat = (ImageView) findViewById(R.id.meat);
         Beverages = (ImageView) findViewById(R.id.beverages);
         Cart = (Button) findViewById(R.id.cart);
+        Alcohol = (ImageView) findViewById(R.id.alcohol);
 
         Home.setOnClickListener(new View.OnClickListener() {
             @Override

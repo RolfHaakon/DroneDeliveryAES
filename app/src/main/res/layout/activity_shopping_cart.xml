@@ -68,7 +68,7 @@
         android:layout_marginTop="32dp"
         android:layout_toEndOf="@+id/category"
         android:layout_toRightOf="@+id/category"
-        android:background="?android:attr/colorActivatedHighlight"
+        android:background="#aa5506"
         android:text="Cart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
