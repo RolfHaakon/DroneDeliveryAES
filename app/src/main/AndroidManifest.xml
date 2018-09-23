@@ -47,6 +47,7 @@
         <activity android:name=".meatsandfishitems.BurgerItem" />
         <activity android:name=".meatsandfishitems.BeefItem" />
         <activity android:name=".meatsandfishitems.BaconItem"></activity>
+        <activity android:name=".activities.Payment" />
     </application>
 
 </manifest>
