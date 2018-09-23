@@ -33,7 +33,12 @@
         <activity android:name=".activities.Track" />
         <activity android:name=".activities.FruitAndVeg" />
         <activity android:name=".fruitvegitems.BroccoliItem" />
-        <activity android:name=".fruitvegitems.AppleItem"></activity>
+        <activity android:name=".fruitvegitems.AppleItem" />
+        <activity android:name=".activities.ShoppingCart" />
+        <activity android:name=".fruitvegitems.BananaItem" />
+        <activity android:name=".fruitvegitems.CarrotItem" />
+        <activity android:name=".fruitvegitems.OrangeItem" />
+        <activity android:name=".fruitvegitems.WatermelonItem"></activity>
     </application>
 
 </manifest>

@@ -8,12 +8,18 @@ import android.widget.Button;
 
 import com.example.rolf.dronedeliveryaes.R;
 import com.example.rolf.dronedeliveryaes.activities.Account;
+import com.example.rolf.dronedeliveryaes.activities.Category;
 import com.example.rolf.dronedeliveryaes.activities.HomePage;
+import com.example.rolf.dronedeliveryaes.activities.ShoppingCart;
+import com.example.rolf.dronedeliveryaes.activities.Track;
 
 public class AppleItem extends AppCompatActivity {
 
     private Button Home;
     private Button Account;
+    private Button Category;
+    private Button Track;
+    private Button Cart;
     private  Button Add;
 
     @Override
@@ -23,6 +29,9 @@ public class AppleItem extends AppCompatActivity {
 
         Home = (Button) findViewById(R.id.home);
         Account = (Button) findViewById(R.id.account);
+        Track = (Button) findViewById(R.id.track);
+        Cart = (Button) findViewById(R.id.cart);
+        Category = (Button) findViewById(R.id.category);
 
         Home.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,6 +47,35 @@ public class AppleItem extends AppCompatActivity {
 
                 Intent goToAccount = new Intent(AppleItem.this, Account.class);
                 startActivity(goToAccount);
+
+            }
+        });
+        Category.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent goToCategory = new Intent(AppleItem.this, com.example.rolf.dronedeliveryaes.activities.Category.class);
+                startActivity(goToCategory);
+
+            }
+        });
+
+        Track.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent goToTrack = new Intent(AppleItem.this, com.example.rolf.dronedeliveryaes.activities.Track.class);
+                startActivity(goToTrack);
+
+            }
+        });
+
+        Cart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent goToShoppingCart = new Intent(AppleItem.this, ShoppingCart.class);
+                startActivity(goToShoppingCart);
 
             }
         });
