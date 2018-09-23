@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#fff"
     android:visibility="visible"
-    tools:context=".activities.Account">
+    tools:context=".activities.OrderHistory">
 
     <Button
         android:id="@+id/home"
@@ -59,33 +59,21 @@
         android:background="?android:attr/colorActivatedHighlight"
         android:text="Cart" />
 
-    <ImageView
-        android:id="@+id/imageView18"
-        android:layout_width="150dp"
-        android:layout_height="208dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="108dp"
-        app:srcCompat="@drawable/user" />
-
     <Button
         android:id="@+id/userInformation"
         android:layout_width="157dp"
         android:layout_height="40dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="220dp"
-        android:layout_marginStart="12dp"
-        android:background="#aa5506"
+        android:background="?android:attr/colorActivatedHighlight"
         android:text="User Information" />
 
     <Button
         android:id="@+id/payment"
-        android:layout_width="105dp"
+        android:layout_width="121dp"
         android:layout_height="40dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/userInformation"
-        android:layout_marginRight="9dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/orderHistory"
         android:background="?android:attr/colorActivatedHighlight"
         android:text="Payment" />
 
@@ -95,61 +83,10 @@
         android:layout_height="40dp"
         android:layout_alignTop="@+id/userInformation"
         android:layout_toEndOf="@+id/userInformation"
-        android:background="?android:attr/colorActivatedHighlight"
+        android:background="#aa5506"
         android:text="Order History" />
 
-    <android.support.v7.widget.AppCompatTextView
-        android:id="@+id/textViewName"
-        android:layout_width="269dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="309dp"
-        android:text="Email"
-        android:textColor="@android:color/black"
-        android:gravity="center"
-        android:textSize="28dp" />
 
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="290dp"
-        android:layout_height="40dp"
-        android:layout_above="@+id/textView14"
-        android:layout_centerHorizontal="true"
-        android:textSize="24dp"
-        android:textColor="@android:color/black"
-        android:text="Full Name" />
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="290dp"
-        android:layout_height="40dp"
-        android:textSize="24dp"
-        android:layout_above="@+id/textView18"
-        android:layout_centerHorizontal="true"
-        android:textColor="@android:color/black"
-        android:text="Address" />
-
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="290dp"
-        android:layout_height="40dp"
-        android:textSize="24dp"
-        android:layout_above="@+id/textView19"
-        android:textColor="@android:color/black"
-        android:layout_centerHorizontal="true"
-        android:text="Phone" />
-
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="290dp"
-        android:layout_height="40dp"
-        android:textSize="24dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:textColor="@android:color/black"
-        android:layout_marginBottom="32dp"
-        android:text="Email" />
 
 
 </RelativeLayout>
