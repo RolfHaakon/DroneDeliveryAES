@@ -45,7 +45,14 @@
         <activity android:name=".meatsandfishitems.ShrimpItem" />
         <activity android:name=".meatsandfishitems.BurgerItem" />
         <activity android:name=".meatsandfishitems.BeefItem" />
-        <activity android:name=".meatsandfishitems.BaconItem"></activity>
+        <activity android:name=".meatsandfishitems.BaconItem" />
+        <activity android:name=".BeveragesItems.CokeItem" />
+        <activity android:name=".BeveragesItems.SpriteItem" />
+        <activity android:name=".BeveragesItems.FantaItem" />
+        <activity android:name=".BeveragesItems.LiptonItem" />
+        <activity android:name=".BeveragesItems.WaterItem" />
+        <activity android:name=".BeveragesItems.ChocoDrinkItem" />
+        <activity android:name=".activities.Beverages"></activity>
     </application>
 
 </manifest>
