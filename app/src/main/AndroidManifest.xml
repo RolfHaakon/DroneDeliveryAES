@@ -52,7 +52,14 @@
         <activity android:name=".BeveragesItems.LiptonItem" />
         <activity android:name=".BeveragesItems.WaterItem" />
         <activity android:name=".BeveragesItems.ChocoDrinkItem" />
-        <activity android:name=".activities.Beverages"></activity>
+        <activity android:name=".activities.Beverages" />
+        <activity android:name=".AlcoholItems.BeerItem" />
+        <activity android:name=".AlcoholItems.CiderItem" />
+        <activity android:name=".AlcoholItems.RedWineItem" />
+        <activity android:name=".AlcoholItems.WhiteWineItem" />
+        <activity android:name=".AlcoholItems.ChampagneItem" />
+        <activity android:name=".AlcoholItems.VodkaItem" />
+        <activity android:name=".activities.Alcohol"></activity>
     </application>
 
 </manifest>

@@ -88,13 +88,13 @@ public class Category extends AppCompatActivity {
             }
         });
 
-        //Alcohol.setOnClickListener(new View.OnClickListener() {
-        //    @Override
-        //    public void onClick(View v) {
-        //        Intent goToAlcohol = new Intent(Category.this, Alcohol.class);
-        //        startActivity(goToAlcohol);
-        //    }
-        //});
+        Alcohol.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goToAlcohol = new Intent(Category.this, Alcohol.class);
+                startActivity(goToAlcohol);
+            }
+        });
 
     }
 }
