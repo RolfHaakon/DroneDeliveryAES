@@ -7,7 +7,7 @@
     tools:context=".activities.Payment">
 
     <Button
-        android:id="@+id/payment"
+        android:id="@+id/confirmpayment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -27,7 +27,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="67dp"
-        android:text="@string/choose_delivery_time"
+        android:text="Choose Payment Method"
         android:textColor="@android:color/black"
         android:textSize="30sp" />
 
@@ -36,8 +36,9 @@
         android:id="@+id/radioGroup_payment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/textView13"
+        android:layout_marginStart="62dp"
         android:layout_marginTop="141dp"
         android:focusable="true">
 

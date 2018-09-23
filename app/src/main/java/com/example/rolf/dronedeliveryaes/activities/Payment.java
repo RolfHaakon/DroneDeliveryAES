@@ -23,6 +23,7 @@ public class Payment extends AppCompatActivity {
     RadioGroup radioGroup;
     RadioButton radioButton;
     TextView textView;
+    private Button ConfirmPayment;
 
 
     @Override
@@ -32,6 +33,17 @@ public class Payment extends AppCompatActivity {
 
         radioGroup = (RadioGroup) findViewById(R.id.radioGroup_payment);
         imageViewPhoto = (ImageView) findViewById(R.id.imageViewPhoto);
+        ConfirmPayment = (Button) findViewById(R.id.confirmpayment);
+
+        ConfirmPayment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent goToCategory = new Intent(Payment.this, OrderConfirmed.class);
+                startActivity(goToCategory);
+
+            }
+        });
 
 
 

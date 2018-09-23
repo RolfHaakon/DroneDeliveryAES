@@ -61,7 +61,8 @@
         <activity android:name=".AlcoholItems.VodkaItem" />
         <activity android:name=".activities.Alcohol" />
         <activity android:name=".activities.DeliveryTime" />
-        <activity android:name=".activities.Payment"></activity>
+        <activity android:name=".activities.Payment" />
+        <activity android:name=".activities.OrderConfirmed"></activity>
     </application>
 
 </manifest>

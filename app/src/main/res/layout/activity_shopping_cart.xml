@@ -13,14 +13,12 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="48dp"
         android:layout_marginEnd="79dp"
-        android:layout_marginLeft="80dp"
-        android:layout_marginRight="79dp"
         android:layout_marginStart="80dp"
         android:layout_marginTop="58dp"
         android:text="Shopping Cart"
         android:textColor="@android:color/black"
         android:textSize="40dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView16"
+        app:layout_constraintBottom_toTopOf="@+id/textView_total"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,35 +26,32 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="26dp"
+        android:id="@+id/textView_total"
+        android:layout_width="133dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="16dp"
         android:layout_marginEnd="178dp"
-        android:layout_marginLeft="176dp"
-        android:layout_marginRight="178dp"
         android:layout_marginStart="176dp"
         android:text="TextView"
         android:textColor="@android:color/black"
         app:layout_constraintBottom_toTopOf="@+id/textView17"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="52dp"
-        android:layout_marginBottom="19dp"
+        android:layout_marginBottom="40dp"
         android:layout_marginEnd="102dp"
-        android:layout_marginLeft="79dp"
-        android:layout_marginRight="102dp"
         android:layout_marginStart="79dp"
         android:text="Delivery Fee:  $14.90"
         android:textColor="@android:color/black"
         android:textSize="25dp"
         app:layout_constraintBottom_toTopOf="@+id/shopping_cart"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
