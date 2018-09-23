@@ -18,6 +18,7 @@ public class OrderHistory extends AppCompatActivity{
     private Button Track;
     private Button Home;
     private Button Cart;
+    private Button UserInformation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,8 +29,16 @@ public class OrderHistory extends AppCompatActivity{
         Track = (Button) findViewById(R.id.track);
         Home = (Button)  findViewById(R.id.home);
         Cart = (Button) findViewById(R.id.cart);
+        UserInformation = (Button) findViewById(R.id.userInformation);
 
 
+        UserInformation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goToUserinformation = new Intent(OrderHistory.this, Account.class);
+                startActivity(goToUserinformation);
+            }
+        });
 
         Category.setOnClickListener(new View.OnClickListener() {
             @Override
