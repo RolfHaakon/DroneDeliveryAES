@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fff"
-    tools:context=".AppleItem">
+    tools:context=".fruitvegitems.BroccoliItem">
 
 
     <Button
-        android:id="@+id/account3"
+        android:id="@+id/cart"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_alignTop="@+id/home"
@@ -22,12 +22,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/account2"
+        app:layout_constraintStart_toEndOf="@+id/track"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.046" />
+        app:layout_constraintVertical_bias="0.044" />
 
     <Button
-        android:id="@+id/account2"
+        android:id="@+id/track"
         android:layout_width="81dp"
         android:layout_height="48dp"
         android:layout_alignTop="@+id/home"
@@ -44,7 +44,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/account"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.046" />
+        app:layout_constraintVertical_bias="0.044" />
 
     <Button
         android:id="@+id/home"
@@ -55,12 +55,12 @@
         android:layout_alignParentTop="true"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="51dp"
-        android:background="#aa5506"
-        android:text="Category"
+        android:background="?android:attr/colorActivatedHighlight"
+        android:text="Home"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/category"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.046" />
+        app:layout_constraintVertical_bias="0.044" />
 
 
     <Button
@@ -73,11 +73,11 @@
         android:layout_toEndOf="@+id/home"
         android:layout_toRightOf="@+id/home"
         android:background="?android:attr/colorActivatedHighlight"
-        android:text="Home"
+        android:text="Category"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/home"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.046" />
+        app:layout_constraintVertical_bias="0.044" />
 
     <Button
         android:id="@+id/account"
@@ -85,8 +85,8 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/home"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginRight="136dp"
         android:layout_marginTop="51dp"
         android:layout_toEndOf="@+id/category"
         android:layout_toRightOf="@+id/category"
@@ -95,9 +95,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/home"
+        app:layout_constraintStart_toEndOf="@+id/category"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.046" />
+        app:layout_constraintVertical_bias="0.044" />
 
 
     <Button

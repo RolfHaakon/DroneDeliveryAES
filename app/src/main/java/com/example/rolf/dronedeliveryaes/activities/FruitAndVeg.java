@@ -21,6 +21,7 @@ public class FruitAndVeg extends AppCompatActivity {
     private Button Account;
     private Button Track;
     private Button Category;
+    private Button Cart;
     private ImageView Apple;
     private ImageView Banana;
     private ImageView Broccoli;
@@ -39,6 +40,7 @@ public class FruitAndVeg extends AppCompatActivity {
         Account = (Button) findViewById(R.id.account);
         Category = (Button) findViewById(R.id.category);
         Track = (Button) findViewById(R.id.track);
+        Cart = (Button) findViewById(R.id.cart);
         Apple = (ImageView) findViewById(R.id.apple_item);
         Banana = (ImageView) findViewById(R.id.banana);
         Broccoli = (ImageView) findViewById(R.id.broccoli);
@@ -65,6 +67,13 @@ public class FruitAndVeg extends AppCompatActivity {
             public void onClick(View v) {
                 Intent goToHomePage = new Intent(FruitAndVeg.this, Track.class);
                 startActivity(goToHomePage);
+            }
+        });
+        Cart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goToShoppingCart = new Intent(FruitAndVeg.this, ShoppingCart.class);
+                startActivity(goToShoppingCart);
             }
         });
         Account.setOnClickListener(new View.OnClickListener() {

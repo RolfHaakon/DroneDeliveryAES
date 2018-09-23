@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import com.example.rolf.dronedeliveryaes.R;
 import com.example.rolf.dronedeliveryaes.activities.HomePage;
-
+import com.example.rolf.dronedeliveryaes.activities.ShoppingCart;
 
 
 public class BroccoliItem extends AppCompatActivity {
@@ -16,6 +16,7 @@ public class BroccoliItem extends AppCompatActivity {
     private Button Account;
     private Button Track;
     private Button Category;
+    private Button Cart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,7 @@ public class BroccoliItem extends AppCompatActivity {
         Account = (Button) findViewById(R.id.account);
         Category = (Button) findViewById(R.id.category);
         Track = (Button) findViewById(R.id.track);
+        Cart = (Button) findViewById(R.id.cart);
 
         Home.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,6 +56,16 @@ public class BroccoliItem extends AppCompatActivity {
             public void onClick(View v) {
                 Intent goToTrackPage = new Intent(BroccoliItem.this, com.example.rolf.dronedeliveryaes.activities.Track.class);
                 startActivity(goToTrackPage);
+            }
+        });
+
+        Cart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent goToShoppingCart = new Intent(BroccoliItem.this, ShoppingCart.class);
+                startActivity(goToShoppingCart);
+
             }
         });
     }
