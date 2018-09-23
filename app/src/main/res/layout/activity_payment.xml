@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="61dp"
+        android:layout_marginBottom="102dp"
         android:background="?android:attr/colorActivatedHighlight"
         android:text="Confirm Payment"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -92,5 +92,5 @@
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="181dp"
         android:layout_marginEnd="25dp"
-        app:srcCompat="@drawable/card" />
+        app:srcCompat="@drawable/white2" />
 </RelativeLayout>

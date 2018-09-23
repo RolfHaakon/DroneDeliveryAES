@@ -18,12 +18,12 @@ public class Payment extends AppCompatActivity {
 
     private RadioGroup radioGroupPhoto;
     private ImageView imageViewPhoto;
-    private Integer []Photos = {R.drawable.apple, R.drawable.bacon, R.drawable.banana, R.drawable.beer};
+    private Integer []Photos = {R.drawable.creditcard, R.drawable.paylah, R.drawable.paypal, R.drawable.card};
 
     RadioGroup radioGroup;
     RadioButton radioButton;
     TextView textView;
-    private Button Payment;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
