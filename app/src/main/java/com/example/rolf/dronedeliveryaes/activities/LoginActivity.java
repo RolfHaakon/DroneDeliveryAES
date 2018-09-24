@@ -16,6 +16,8 @@ package com.example.rolf.dronedeliveryaes.activities;
         import com.example.rolf.dronedeliveryaes.helpers.InputValidation;
         import com.example.rolf.dronedeliveryaes.sql.DatabaseHelper;
 
+        import java.text.BreakIterator;
+
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
     private final AppCompatActivity activity = LoginActivity.this;
@@ -135,5 +137,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private void emptyInputEditText() {
         textInputEditTextEmail.setText(null);
         textInputEditTextPassword.setText(null);
+
     }
 }

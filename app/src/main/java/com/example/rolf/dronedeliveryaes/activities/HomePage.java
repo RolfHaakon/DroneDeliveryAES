@@ -3,6 +3,7 @@ package com.example.rolf.dronedeliveryaes.activities;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.AppCompatTextView;
 import android.view.View;
 import android.widget.Button;
 import com.example.rolf.dronedeliveryaes.R;
@@ -15,6 +16,7 @@ public class HomePage extends AppCompatActivity {
     private Button Account;
     private Button Track;
     private Button Cart;
+    public static String Current_User;
 
 
     @Override
@@ -27,6 +29,7 @@ public class HomePage extends AppCompatActivity {
         Account = (Button) findViewById(R.id.account);
         Track = (Button) findViewById(R.id.track);
         Cart = (Button) findViewById(R.id.cart);
+        initObjects();
 
         Category.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,4 +70,10 @@ public class HomePage extends AppCompatActivity {
             }
         });
     }
+
+    private void initObjects() {
+        String emailFromIntent = getIntent().getStringExtra("EMAIL");
+        Current_User = emailFromIntent;
+    }
+
 }
