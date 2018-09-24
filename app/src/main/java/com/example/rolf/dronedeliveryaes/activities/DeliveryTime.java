@@ -32,7 +32,7 @@ public class DeliveryTime extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent goToCategory = new Intent(DeliveryTime.this, Payment.class);
+                Intent goToCategory = new Intent(DeliveryTime.this, PaymentCheckout.class);
                 startActivity(goToCategory);
 
             }
