@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.rolf.dronedeliveryaes.R;
 import com.example.rolf.dronedeliveryaes.activities.Account;
@@ -75,6 +77,18 @@ public class ChocoDrinkItem extends AppCompatActivity {
 
                 Intent goToShoppingCart = new Intent(ChocoDrinkItem.this, ShoppingCart.class);
                 startActivity(goToShoppingCart);
+
+            }
+        });
+
+        Button btn = (Button) findViewById(R.id.button2);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                TextView item = (TextView) findViewById(R.id.textViewbeer);
+                String displayitem = item.getText().toString();
+                Toast.makeText(getBaseContext(),displayitem+" Added to cart",Toast.LENGTH_SHORT).show();
 
             }
         });

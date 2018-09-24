@@ -99,17 +99,15 @@
 
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonbeer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="150dp"
-        android:layout_marginLeft="149dp"
-        android:layout_marginRight="150dp"
         android:layout_marginStart="149dp"
         android:layout_marginTop="8dp"
-        android:text="Add To Cart"
         android:background="?android:attr/colorActivatedHighlight"
+        android:text="Add To Cart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -133,7 +131,7 @@
         app:srcCompat="@drawable/beer" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/textViewbeer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -167,7 +165,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textViewbeer"
         app:layout_constraintVertical_bias="0.0" />
 
 </android.support.constraint.ConstraintLayout>
