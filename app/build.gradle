@@ -5,8 +5,8 @@ android {
     buildToolsVersion "24.0.2"
     defaultConfig {
         applicationId "com.example.rolf.dronedeliveryaes"
-        minSdkVersion 15
-        targetSdkVersion 28
+        minSdkVersion 23
+        targetSdkVersion 23
         versionCode 1
         versionName "1.0"
     }

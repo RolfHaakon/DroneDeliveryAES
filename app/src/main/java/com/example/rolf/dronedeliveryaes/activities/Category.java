@@ -32,6 +32,7 @@ public class Category extends AppCompatActivity {
         Meat = (ImageView) findViewById(R.id.meat);
         Beverages = (ImageView) findViewById(R.id.beverages);
         Cart = (Button) findViewById(R.id.cart);
+        Alcohol = (ImageView) findViewById(R.id.alcohol);
 
         Home.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,21 +81,21 @@ public class Category extends AppCompatActivity {
                startActivity(goToMeats);
            }
        });
-        //Beverages.setOnClickListener(new View.OnClickListener() {
-        //    @Override
-        //    public void onClick(View v) {
-        //        Intent goToBeverages = new Intent(Category.this, Beverages.class);
-        //        startActivity(goToBeverages);
-        //    }
-        //});
-//
-        //Alcohol.setOnClickListener(new View.OnClickListener() {
-        //    @Override
-        //    public void onClick(View v) {
-        //        Intent goToAlcohol = new Intent(Category.this, Alcohol.class);
-        //        startActivity(goToAlcohol);
-        //    }
-        //});
+        Beverages.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goToBeverages = new Intent(Category.this, Beverages.class);
+                startActivity(goToBeverages);
+            }
+        });
+
+        Alcohol.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goToAlcohol = new Intent(Category.this, Alcohol.class);
+                startActivity(goToAlcohol);
+            }
+        });
 
     }
 }

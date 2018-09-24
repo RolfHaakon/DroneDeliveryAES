@@ -20,4 +20,25 @@
     <string name="action_settings">Settings</string>
     <string name="text_hello">Hello,</string>
     <string name="text_title">Grocery Delivery DataBase</string>
+    <string name="_15_00_16_00">15:00-16:00</string>
+    <string name="_14_00_15_00">14:00-15:00</string>
+    <string name="_13_00_14_00">13:00-14:00</string>
+    <string name="_12_00_13_00">12:00-13:00</string>
+    <string name="_11_00_12_00">11:00-12:00</string>
+    <string name="_10_00_11_00">10:00-11:00</string>
+    <string name="_09_00_10_00">09:00-10:00</string>
+    <string name="_08_00_09_00">08:00-09:00</string>
+    <string name="_07_00_08_00">07:00-08:00</string>
+    <string name="_16_00_17_00">16:00-17:00</string>
+    <string name="_17_00_18_00">17:00-18:00</string>
+    <string name="_18_00_19_00">18:00-19:00</string>
+    <string name="_19_00_20_00">19:00-20:00</string>
+    <string name="_20_00_21_00">20:00-21:00</string>
+    <string name="_21_00_22_00">21:00-22:00</string>
+    <string name="_22_00_23_00">22:00-23:00</string>
+    <string name="_23_00_24_00">23:00-24:00</string>
+    <string name="your_selection">Your Selection:</string>
+    <string name="confirm_selection">Confirm Selection</string>
+    <string name="choose_delivery_time">Choose delivery time</string>
+    <string name="Please_confirm_time">:</string>
 </resources>

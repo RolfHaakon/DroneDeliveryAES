@@ -46,8 +46,26 @@
         <activity android:name=".meatsandfishitems.ShrimpItem" />
         <activity android:name=".meatsandfishitems.BurgerItem" />
         <activity android:name=".meatsandfishitems.BeefItem" />
-        <activity android:name=".meatsandfishitems.BaconItem"></activity>
+        <activity android:name=".meatsandfishitems.BaconItem" />
+        <activity android:name=".BeveragesItems.CokeItem" />
+        <activity android:name=".BeveragesItems.SpriteItem" />
+        <activity android:name=".BeveragesItems.FantaItem" />
+        <activity android:name=".BeveragesItems.LiptonItem" />
+        <activity android:name=".BeveragesItems.WaterItem" />
+        <activity android:name=".BeveragesItems.ChocoDrinkItem" />
+        <activity android:name=".activities.Beverages" />
+        <activity android:name=".AlcoholItems.BeerItem" />
+        <activity android:name=".AlcoholItems.CiderItem" />
+        <activity android:name=".AlcoholItems.RedWineItem" />
+        <activity android:name=".AlcoholItems.WhiteWineItem" />
+        <activity android:name=".AlcoholItems.ChampagneItem" />
+        <activity android:name=".AlcoholItems.VodkaItem" />
+        <activity android:name=".activities.Alcohol" />
+        <activity android:name=".activities.DeliveryTime" />
+        <activity android:name=".activities.PaymentCheckout" />
+        <activity android:name=".activities.OrderConfirmed"></activity>
         <activity android:name=".activities.Payment" />
+
     </application>
 
 </manifest>
